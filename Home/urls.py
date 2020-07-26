@@ -5,5 +5,5 @@ from .views import Home_view, Generic, Contact
 urlpatterns = [
     path('', Home_view.as_view(), name='Home'),
     path('generic', Generic.as_view(), name='Generic'),
-    path('contact', Contact, name='Contact'),
+    path('contact', Contact , name='Contact'),
 ]
