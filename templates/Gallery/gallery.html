@@ -1,0 +1,72 @@
+{% extends 'BASE.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Main -->
+<section id="main">
+
+    <!-- Header -->
+        <header id="header">
+            <div>Snapshot <span>by TEMPLATED</span></div>
+        </header>
+
+    <!-- Gallery -->
+        <section id="galleries">
+
+            <!-- Photo Galleries -->
+                <div class="gallery">
+
+                    <!-- Filters -->
+                        <header>
+                            <h1>Gallery</h1>
+                            <ul class="tabs">
+                                <li><a href="#" data-tag="all" class="button active">All</a></li>
+                                <li><a href="#" data-tag="people" class="button">People</a></li>
+                                <li><a href="#" data-tag="place" class="button">Places</a></li>
+                                <li><a href="#" data-tag="thing" class="button">Things</a></li>
+                            </ul>
+                        </header>
+
+                        <div class="content">
+                            <div class="media all people">
+                                <a href="{% static '/img/fulls/01.jpg' %}"><img src="{% static '/img/thumbs/01.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all place">
+                                <a href="{% static '/img/fulls/05.jpg' %}"><img src="{% static '/img/thumbs/05.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all thing">
+                                <a href="{% static '/img/fulls/09.jpg' %}"><img src="{% static '/img/thumbs/09.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all people">
+                                <a href="{% static '/img/fulls/02.jpg' %}"><img src="{% static '/img/thumbs/02.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all place">
+                                <a href="{% static '/img/fulls/06.jpg' %}"><img src="{% static '/img/thumbs/06.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all thing">
+                                <a href="{% static '/img/fulls/10.jpg' %}"><img src="{% static '/img/thumbs/10.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all people">
+                                <a href="{% static '/img/fulls/03.jpg' %}"><img src="{% static '/img/thumbs/03.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all place">
+                                <a href="{% static '/img/fulls/07.jpg' %}"><img src="{% static '/img/thumbs/07.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all thing">
+                                <a href="{% static '/img/fulls/11.jpg' %}"><img src="{% static '/img/thumbs/11.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all people">
+                                <a href="{% static '/img/fulls/04.jpg' %}"><img src="{% static '/img/thumbs/04.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all place">
+                                <a href="{% static '/img/fulls/08.jpg' %}"><img src="{% static '/img/thumbs/08.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                            <div class="media all thing">
+                                <a href="{% static '/img/fulls/12.jpg' %}"><img src="{% static '/img/thumbs/12.jpg' %}" alt="" title="This right here is a caption." /></a>
+                            </div>
+                        </div>
+                </div>
+        </section>
+
+{% include 'Home/about.html'%}	
+{% endblock %}
