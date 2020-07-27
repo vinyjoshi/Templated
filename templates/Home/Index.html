@@ -71,7 +71,7 @@
     <!-- Form -->
         <div class="column">
             <h3>Get in Touch</h3>
-            <form>
+            <form method="POST">
                 {% csrf_token %}
                 {{ form.as_p }}
                 <input value="Send Message" class="button" type="submit">
